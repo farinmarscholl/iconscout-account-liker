@@ -11,7 +11,7 @@ browser = webdriver.Chrome('/Users/farin/Documents/Dokumente/Business/Farin Mars
 
 ##### config #####
 
-securetimer = randint(1,3)
+securetimer = randint(2,4)
 
 ##### retrieve section #####
 
@@ -107,6 +107,7 @@ def AccountLoop():
 
 
 def onStart():
+    browser.set_window_size(856, 682)
     AccountLoop()
     
 onStart()
